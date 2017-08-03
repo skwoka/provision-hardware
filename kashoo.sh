@@ -23,16 +23,3 @@ git_clone 'sync-oauth2'
 git_clone 'exchange-rate-service'
 git_clone 'service-repo-coordinator'
 git_clone 'ops-tools'
-
-#git clone git@github.com:Kashoo/chef-repo.git
-#git clone git@github.com:Kashoo/books.git
-#git clone git@github.com:Kashoo/marketplace-integration.git
-#git clone git@github.com:Kashoo/oauth2-provider.git
-#git clone git@github.com:Kashoo/bovine.git
-#git clone git@github.com:Kashoo/tools.git
-#git clone git@github.com:Kashoo/invoice-payment-service.git
-#git clone git@github.com:Kashoo/blobstore.git
-#git clone git@github.com:Kashoo/sync-oauth2.git
-#git clone git@github.com:Kashoo/exchange-rate-service.git
-#git clone git@github.com:Kashoo/service-repo-coordinator.git
-#git clone git@github.com:Kashoo/ops-tools.git
