@@ -1,6 +1,8 @@
 #!/bin/sh
 # Run this script to install tools needed to provision this machine.
 
+basedir=`pwd`
+
 # Install Brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew doctor
@@ -61,8 +63,8 @@ rbenv install 2.2.5
 rbenv global 2.2.5
 
 # Install bash profile include files
-BASH_PROFILE_INCLUDES_HOME="~/.bash_profile_includes"
+BASH_PROFILE_INCLUDES_HOME=~/.bash_profile_includes
 if [ ! -d "$BASH_PROFILE_INCLUDES_HOME" ] ; then
   mkdir "$BASH_PROFILE_INCLUDES_HOME"
 fi
-cp -i -r bash_profile_includes "$BASH_PROFILE_INCLUDES_HOME"
+cp -i -v -r "$basedir/bash_profile_includes/" "$BASH_PROFILE_INCLUDES_HOME"
