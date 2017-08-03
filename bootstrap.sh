@@ -59,3 +59,10 @@ rbenv install 2.4.1
 rbenv install 2.3.3
 rbenv install 2.2.5
 rbenv global 2.2.5
+
+# Install bash profile include files
+BASH_PROFILE_INCLUDES_HOME="~/.bash_profile_includes"
+if [ ! -d "$BASH_PROFILE_INCLUDES_HOME" ] ; then
+  mkdir "$BASH_PROFILE_INCLUDES_HOME"
+fi
+cp -i -r bash_profile_includes "$BASH_PROFILE_INCLUDES_HOME"
