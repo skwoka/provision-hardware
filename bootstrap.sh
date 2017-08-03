@@ -9,11 +9,14 @@ brew doctor
 brew tap caskroom/cask
 
 # Install various apps through Cask
-CASKS="google-chrome firefox virtualbox slack eclipse-java intellij-idea-ce atom iterm2"
-for cask in "$CASKS"
-do
-  brew cask install "$cask"
-done
+brew cask install google-chrome
+brew cask install firefox
+brew cask install virtualbox
+brew cask install slack
+brew cask install eclipse-java
+brew cask install intellij-idea-ce
+brew cask install atom
+brew cask install iterm2
 
 ADMIN_HOME=~/administration
 mkdir "$ADMIN_HOME"
