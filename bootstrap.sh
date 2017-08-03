@@ -8,6 +8,13 @@ brew doctor
 # Install Caskroom
 brew tap caskroom/cask
 
+# Install various apps through Cask
+CASKS="google-chrome firefox virtualbox slack eclipse-java intellij-idea-ce atom iterm2"
+for cask in "$CASKS"
+do
+  brew cask install "$cask"
+done
+
 ADMIN_HOME=~/administration
 mkdir "$ADMIN_HOME"
 
@@ -28,9 +35,8 @@ fi
 which rbenv
 if [ $? -ne 0 ] ; then
   echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
-else
-  source ~/.bash_profile
 fi
+source ~/.bash_profile
 
 ~/.rbenv/bin/rbenv init
 
@@ -44,3 +50,4 @@ fi
 rbenv install 2.4.1
 rbenv install 2.3.3
 rbenv install 2.2.5
+rbenv global 2.2.5
