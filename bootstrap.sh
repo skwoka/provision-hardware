@@ -30,3 +30,8 @@ fi
 
 # Install ruby build
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+
+# Install common ruby versions
+rbenv install 2.4.1
+rbenv install 2.3.3
+rbenv install 2.2.5
