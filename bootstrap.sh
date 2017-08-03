@@ -7,3 +7,6 @@ brew doctor
 
 # Install Caskroom
 brew tap caskroom/cask
+
+# Install macOSX-defaults
+git clone https://github.com/kevinSuttle/macOS-Defaults.git
