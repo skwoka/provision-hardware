@@ -20,10 +20,13 @@ brew cask install intellij-idea-ce
 brew cask install atom
 brew cask install iterm2
 brew cask install java
-brew cask install postgres
 
 brew install maven
 brew install ant
+
+brew tap petere/postgresql
+brew install petere/postgresql/postgresql-common
+brew install postgresql@9.5
 
 ADMIN_HOME=~/administration
 mkdir "$ADMIN_HOME"
