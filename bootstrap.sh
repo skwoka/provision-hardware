@@ -20,6 +20,7 @@ brew cask install intellij-idea-ce
 brew cask install atom
 brew cask install iterm2
 brew cask install java
+brew cask install fluid
 
 brew install maven
 brew install ant
