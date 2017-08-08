@@ -22,6 +22,7 @@ brew cask install iterm2
 brew cask install java
 brew cask install fluid
 brew cask install 1password
+brew cask install quicksilver
 
 brew install maven
 brew install ant
