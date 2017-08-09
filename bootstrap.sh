@@ -30,6 +30,7 @@ brew install ant
 brew tap petere/postgresql
 brew install petere/postgresql/postgresql-common
 brew install postgresql@9.5
+brew install pyenv
 
 ADMIN_HOME=~/administration
 mkdir "$ADMIN_HOME"
