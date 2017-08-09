@@ -22,8 +22,13 @@ brew cask install iterm2
 brew cask install java
 brew cask install postgres
 
-brew install maven
+# Install various utilities through homebrew
 brew install ant
+brew install git
+brew install maven
+brew install node
+brew install sbt
+brew install typesafe-activator
 
 ADMIN_HOME=~/administration
 mkdir "$ADMIN_HOME"

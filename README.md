@@ -3,7 +3,7 @@ Run `bootstrap.sh` to install essential applications and libraries to the system
 Add the following to `.bash_profile`:
 
 ```
-for file in <USER HOME>/.bash_profile_includes/*.sh; do
+for file in ~/.bash_profile_includes/*.sh; do
   [[ -r $file ]] && source $file;
 done
 ```
