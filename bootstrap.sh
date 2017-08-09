@@ -20,7 +20,9 @@ brew cask install intellij-idea-ce
 brew cask install atom
 brew cask install iterm2
 brew cask install java
-brew cask install postgres
+brew cask install fluid
+brew cask install 1password
+brew cask install quicksilver
 
 # Install various utilities through homebrew
 brew install ant
@@ -29,6 +31,12 @@ brew install maven
 brew install node
 brew install sbt
 brew install typesafe-activator
+
+brew tap petere/postgresql
+brew install petere/postgresql/postgresql-common
+brew install postgresql@9.5
+brew install pyenv
+brew install node
 
 ADMIN_HOME=~/administration
 mkdir "$ADMIN_HOME"
@@ -40,6 +48,10 @@ if [ ! -d "$MACOS_DEFAULTS_HOME" ] ; then
 else
   cd "$MACOS_DEFAULTS_HOME" && git pull --rebase
 fi
+
+# Install essential npm packages
+npm install -g bower
+npm install -g grunt-cli
 
 # Install rbenv
 if [ ! -d ".rbenv" ] ; then
