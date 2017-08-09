@@ -31,6 +31,7 @@ brew tap petere/postgresql
 brew install petere/postgresql/postgresql-common
 brew install postgresql@9.5
 brew install pyenv
+brew install node
 
 ADMIN_HOME=~/administration
 mkdir "$ADMIN_HOME"
@@ -42,6 +43,10 @@ if [ ! -d "$MACOS_DEFAULTS_HOME" ] ; then
 else
   cd "$MACOS_DEFAULTS_HOME" && git pull --rebase
 fi
+
+# Install essential npm packages
+npm install -g bower
+npm install -g grunt-cli
 
 # Install rbenv
 if [ ! -d ".rbenv" ] ; then
