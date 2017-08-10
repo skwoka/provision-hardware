@@ -24,14 +24,18 @@ brew cask install fluid
 brew cask install 1password
 brew cask install quicksilver
 
-brew install maven
+# Install various utilities through homebrew
 brew install ant
+brew install git
+brew install maven
+brew install node
+brew install pyenv
+brew install sbt
+brew install typesafe-activator
 
 brew tap petere/postgresql
 brew install petere/postgresql/postgresql-common
 brew install postgresql@9.5
-brew install pyenv
-brew install node
 
 ADMIN_HOME=~/administration
 mkdir "$ADMIN_HOME"
