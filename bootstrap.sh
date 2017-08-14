@@ -23,6 +23,7 @@ brew cask install java
 brew cask install fluid
 brew cask install 1password
 brew cask install quicksilver
+brew cask install ios-console
 
 # Install various utilities through homebrew
 brew install ant
