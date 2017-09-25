@@ -33,6 +33,7 @@ brew install node
 brew install pyenv
 brew install sbt
 brew install typesafe-activator
+brew install jenv
 
 brew tap petere/postgresql
 brew install petere/postgresql/postgresql-common
